@@ -50,9 +50,19 @@ img:not([alt]) {
   filter: blur(10px);
 }
 
+textarea {
+  width: 35ch;
+  max-width: 60ch;
+}
+
 /* Utilities */
 .flow > * + * {
   margin-top: var(--flow-space, 1em);
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
@@ -92,6 +102,11 @@ img:not([alt]) {
 
 .card__body {
   font-size: var(--size-step--2);
+}
+
+.rounded-border {
+  border-radius: 0.25em;
+  border: solid var(--color-primary) 0.5px;
 }
 
 .extra-padding {
