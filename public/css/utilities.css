@@ -6,5 +6,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--size-step-0);
+  gap: 1.5rem;
 }
