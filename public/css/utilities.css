@@ -1,0 +1,10 @@
+.bg-color {
+  background-color: var(--color-bg-green);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-step-0);
+}
