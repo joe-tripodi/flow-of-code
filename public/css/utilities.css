@@ -2,6 +2,22 @@
   background-color: var(--color-bg-green);
 }
 
+.bg-color-pink {
+  background-color: var(--color-pink);
+}
+
+.bg-color-cyan {
+  background-color: var(--color-cyan);
+}
+
+.bg-color-orange {
+  background-color: var(--color-orange);
+}
+
+.bg-color-light-blue {
+  background-color: var(--color-light-blue);
+}
+
 .small-text {
   font-size: var(--size-step--1);
 }
@@ -46,24 +62,15 @@
 .blur-background {
   background-color: var(--color-bg-blur); 
   backdrop-filter: blur(20px) saturate(1.7);
+  -webkit-backdrop-filter: blur(20px) saturate(1.7);
 }
 
 .wrapper {
-  max-width: 75ch;
+  max-width: var(--wrapper-width, 75ch);
   margin-left: auto;
   margin-right: auto;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
-.grid {
-  display: grid;
-  grid-gap: 1rem;
-}
-
-@supports (width: min(250px, 100%)) {
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-  }
-}
 
