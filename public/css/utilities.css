@@ -2,11 +2,26 @@
   background-color: var(--color-bg-green);
 }
 
+.small-text {
+  font-size: var(--size-step--1);
+}
+
+.center-text {
+  text-align: center;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+}
+
+.flex-center-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .fixed-position {
@@ -24,6 +39,10 @@
   width: 100vw;
 }
 
+.xl-top-padding {
+  padding-top: 128px;
+}
+
 .blur-background {
   background-color: var(--color-bg-blur); 
   backdrop-filter: blur(20px) saturate(1.7);
@@ -33,7 +52,8 @@
   max-width: 75ch;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .grid {

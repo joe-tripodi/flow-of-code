@@ -9,6 +9,7 @@
 :root {
   --color-bg-green: #233831;
   --color-primary: #cae2da;
+  --color-headings: #8fdcc2;
   --color-bg-blur: hsla(158, 23%, 18%, .7);
   --size-step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
   --size-step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
@@ -26,6 +27,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "acorn-bold";
+  src: url('../assets/fonts/acorn-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background: var(--color-bg);
   color: var(--color-primary);
@@ -39,9 +47,9 @@ body {
 
 h1, h2, h3 {
   font-family: "acorn", serif; 
-  font-weight: 800;
+  font-feature-settings: "liga";
   line-height: 1.1;
-  color: var(--color-secondary);
+  color: var(--color-headings);
 }
 
 h1 {
