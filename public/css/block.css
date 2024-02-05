@@ -5,3 +5,8 @@
   color: currentColor;
 }
 
+.navigation__list {
+  padding: 10px;
+  border-radius: 50px;
+}
+

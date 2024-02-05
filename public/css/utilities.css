@@ -8,3 +8,42 @@
   justify-content: center;
   gap: 1.5rem;
 }
+
+.fixed-position {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.full-width {
+  width: 100vw;
+}
+
+.blur-background {
+  background-color: var(--color-bg-blur); 
+  backdrop-filter: blur(20px) saturate(1.7);
+}
+
+.wrapper {
+  max-width: 75ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@supports (width: min(250px, 100%)) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  }
+}
+

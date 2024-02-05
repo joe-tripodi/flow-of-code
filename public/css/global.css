@@ -1,7 +1,7 @@
 @import "reset.css";
+@import "composition.css";
 @import "utilities.css";
 @import "block.css";
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,64..150,500..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -9,7 +9,7 @@
 :root {
   --color-bg-green: #233831;
   --color-primary: #cae2da;
-
+  --color-bg-blur: hsla(158, 23%, 18%, .7);
   --size-step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
   --size-step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
   --size-step-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
@@ -34,10 +34,11 @@ body {
   line-height: 1.7;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
-  font-family: "Roboto Flex", sans-serif; 
+  font-family: "acorn", serif; 
   font-weight: 800;
   line-height: 1.1;
   color: var(--color-secondary);
@@ -63,34 +64,3 @@ textarea {
   width: 35ch;
   max-width: 60ch;
 }
-
-/* Composition */
-
-.flow > * + * {
-  margin-top: var(--flow-space, 1em);
-}
-
-/* Utilities */
-
-.wrapper {
-  max-width: 75ch;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
-}
-
-.text-highlight {
-  color: var(--color-highlight);
-}
-
-.grid {
-  display: grid;
-  grid-gap: 1rem;
-}
-
-@supports (width: min(250px, 100%)) {
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-  }
-}
-
