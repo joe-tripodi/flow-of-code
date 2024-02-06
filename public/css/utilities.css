@@ -59,6 +59,10 @@
   padding-top: 128px;
 }
 
+.l-top-padding {
+  padding-top: 3em;
+}
+
 .blur-background {
   background-color: var(--color-bg-blur); 
   backdrop-filter: blur(20px) saturate(1.7);
