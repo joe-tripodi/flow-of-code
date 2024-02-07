@@ -2,6 +2,10 @@
   margin-top: var(--flow-space, 1em);
 }
 
+.l-flow > * {
+  margin-top: 2em;
+}
+
 .lg-flow > * {
   margin-top: 3em;
 }
