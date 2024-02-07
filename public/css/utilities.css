@@ -77,4 +77,12 @@
   padding-left: 1rem;
 }
 
+.text-highlight {
+  color: currentColor;
+  text-underline-offset: 5px;
+}
+
+.text-highlight:hover {
+  color: #d094e5;
+}
 
