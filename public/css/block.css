@@ -43,3 +43,45 @@
 .card img {
   flex-grow: 1;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer__title {
+  font-weight: 600;
+  color: #8fdcc2;
+}
+
+.github__area {
+  display: flex;
+  align-content: end;
+  align-items: end;
+  justify-content: center;
+}
+
+.github__inner {
+  display: flex;
+  gap: 2rem;
+  padding: 20px;
+  border-radius: 50px;
+  align-items: center;
+  align-content: center;
+  background-color: #2e4940;
+}
+
+.github__info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 1;
+  line-height: 1.2;
+}
+
+.github__svg {
+  width: 41px;
+  height: 40px;
+}

@@ -28,8 +28,13 @@
 
 .flex-center {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
+  gap: 1.5rem;
+}
+
+.flex {
+  display: flex;
   gap: 1.5rem;
 }
 
@@ -86,3 +91,12 @@
   color: #d094e5;
 }
 
+
+.source__title {
+  color: #7bbea8;
+}
+
+.source__link {
+  color: #8fdcc2;
+  text-decoration: none;
+}
