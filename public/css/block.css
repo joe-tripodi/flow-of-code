@@ -46,9 +46,14 @@
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
   align-items: center;
+  gap: 2rem;
+}
+
+.footer > * {
+  flex: 1 1 30rem;
 }
 
 .footer__title {
@@ -56,11 +61,28 @@
   color: #8fdcc2;
 }
 
+.footer__details {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 530px){
+  .footer__details {
+    justify-content: start;
+  }
+}
+
 .github__area {
   display: flex;
-  align-content: end;
-  align-items: end;
+  align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 530px){
+  .github__area {
+    justify-content: end;
+  }
 }
 
 .github__inner {
