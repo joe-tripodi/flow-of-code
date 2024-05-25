@@ -44,7 +44,7 @@
               <textarea rows="10" style="width:100%" required id="message" name="message" type="message"></textarea>
             </div>
             <div style="text-align:center;">
-              <button style="width:33%">Send</button>
+              <button class="send" style="width:33%">Send</button>
             </div>
           </form>
         </div>
@@ -82,7 +82,6 @@
 </html>
 
 <style>
-
 .my-form {
   display: flex;
   justify-content: center;
@@ -105,6 +104,22 @@
 .form-field {
   display: flex;
   flex-direction: column;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+}
+
+textarea {
+  border-radius: 5px;
+  border: none;
+}
+
+.send {
+  color: black;
+  border-radius: 5px;
+  border: none;
 }
 
 .boxsizingBorder {
