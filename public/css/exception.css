@@ -1,3 +1,7 @@
 .card__image[data-state="right"] {
   margin-left: 15px;
 }
+
+.wp-image-98 {
+  border-radius: min(1.5rem, 2vw);
+}
