@@ -25,6 +25,30 @@
         </div>
     </header>
     <main class="lg-flow">
+      <div class="my-form wrapper">
+        <div class="my-form">
+          <form class="[ flow contact-form ]" >
+            <div class="l-top-padding" style="text-align: center">
+              <h2>Contact</h2>
+            </div>
+            <div class="form-field">
+              <label for="name">Name:</label>
+              <input required id="name" name="name"></input>
+            </div>
+            <div class="form-field">
+              <label for="email">Email:</label>
+              <input required id="email" name="email" type="email"></input>
+            </div>
+            <div class="form-field">
+              <label for="message">Message:</label>
+              <textarea rows="10" style="width:100%" required id="message" name="message" type="message"></textarea>
+            </div>
+            <div style="text-align:center;">
+              <button style="width:33%">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
       <div class="switcher">
         <div class="github__area">
           <div class="github__inner">
@@ -56,3 +80,36 @@
     <script src="scripts/blurOnScroll.js"></script>
   </body>
 </html>
+
+<style>
+
+.my-form {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50ch;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-form {
+    width: 30ch;
+  }
+}
+
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxsizingBorder {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+</style>
